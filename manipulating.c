@@ -18,12 +18,12 @@ void manipulating(void) {
 		// BUFFER_SIZE prevents buffer overflow
 		fgets(string1, BUFFER_SIZE, stdin);
 
-		// Remove the newline character from the input
+		// Replace the newline character with null terminator
 		// Ensure fgets doesn't read the newline as an input when user presses enter
 		string1[strlen(string1) - 1] = '\0';
 
 		// If first input is not 'q', ask for second input
-		if ((strcmp(string1, "q") != 0) ){
+		if ((strcmp(string1, "q") != 0)) {
 			printf("Type the 2nd string:\n");
 
 			fgets(string2, BUFFER_SIZE, stdin);
