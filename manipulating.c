@@ -11,7 +11,7 @@ void manipulating(void) {
 	char string1[BUFFER_SIZE * 2];
 	char string2[BUFFER_SIZE];
 
-	// Do-while loop prompts user for two inputs unless 'q' is entered as the first input
+	// Enter a do-while loop that continues until the user enters 'q'
 	do {
 		printf("Type the 1st string (q - to quit):\n");
 		// Use fgets to read user input
