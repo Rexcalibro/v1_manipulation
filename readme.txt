@@ -1,0 +1,1 @@
+Code sampled from school assignment.
