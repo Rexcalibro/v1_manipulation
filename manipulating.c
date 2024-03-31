@@ -11,7 +11,7 @@ void manipulating(void) {
 	char string1[BUFFER_SIZE * 2];
 	char string2[BUFFER_SIZE];
 
-	// Do-while loop prompts user for two inputs until 'q' is entered as the first input
+	// Do-while loop prompts user for two inputs unless 'q' is entered as the first input
 	do {
 		printf("Type the 1st string (q - to quit):\n");
 		// Use fgets to read user input
@@ -26,8 +26,6 @@ void manipulating(void) {
 		if ((strcmp(string1, "q") != 0) ){
 			printf("Type the 2nd string:\n");
 
-			// Use fgets to read user input
-		    // BUFFER_SIZE prevents buffer overflow
 			fgets(string2, BUFFER_SIZE, stdin);
 			string2[strlen(string2) - 1] = '\0';
 
