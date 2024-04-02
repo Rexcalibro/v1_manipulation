@@ -16,6 +16,7 @@ void manipulating(void) {
 		printf("Type the 1st string (q - to quit):\n");
 		// Use fgets to read user input
 		// BUFFER_SIZE prevents buffer overflow
+		// if input length is less than BUFFER_SIZE
 		fgets(string1, BUFFER_SIZE, stdin);
 
 		// Replace the newline character with null terminator
